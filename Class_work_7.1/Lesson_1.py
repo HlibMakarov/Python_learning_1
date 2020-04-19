@@ -17,3 +17,8 @@ radius = 42000
 pi = math.pi
 area_of_a_circle = (radius**2) * pi
 print("Площадь круга равна: %5.2f см2 при радусе %.2f см" %(area_of_a_circle, radius))
+
+y = 2
+x = 4
+sum_x_y = y + x
+print(sum_x_y)
