@@ -270,9 +270,9 @@
 # else:
 #     print('All very well bro you could walk in the street')
 
-parol = input('Enter your password')
-
-if parol == '123':
-    print("WELCOME")
-else:
-    print('Wrong pass')
+# parol = input('Enter your password')
+#
+# if parol == '123':
+#     print("WELCOME")
+# else:
+#     print('Wrong pass')
