@@ -429,4 +429,100 @@
 # for test in range(15):
 #     print('Hello')
 
+# Python-джедай #10 - Свои функции
+# https://youtu.be/grMu71nj1u8?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+#
+# def print_spam():
+#     print('spam')
+#     print('spam')
+#     print('spam')
+# print_spam()
+#
+# def multiply(number):
+#     print(number * 2)
+#
+# multiply(5)
+#
+# converted = str(1232143)
+# print(converted)
+
+# def max(x, y):
+#     if x > y:
+#         return x
+#     else:
+#         return y
+# x = float(input(' Digit 1:'))
+# y = float(input(' Digit 2:'))
+#
+# print(max(x, y))
+
+#           Python-джедай #11 - Комментарии, docstring
+#           https://youtu.be/gt_qPSiKb04?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+#
+# test = "Howdy Ho"
+# print(test) # Здесь мы выводим переменную на экран при помощи функции принт
+
+# def howdy_ho():
+#     '''Описание функции напечатать Хауди Хо'''
+#     print('Howdy Ho!')
+#
+# print(howdy_ho.__doc__)
+#
+# def shout(word):
+#     return word + '!' # К слову присоеденить в конце знак '!'
+# speak = shout # прировнять функцию а не ее вывод так как без ()
+# output = speak ('shout') # аут равен функции шаут(передача переменной в функцию)
+# print(output)
+# Функция shout возвращает слово + !.
+# функции speak дают возможности shout, т. е. вернуть слово с !
+# Как нам говорили в уроке, если стоят скобки, значит  функция вызовется и присваивание не произойдет.
+# Таким образом, выполняется функция speak, а output остаётся пустой и поэтому ничего не выводится.
+#
+# def howdy_ho(name):
+#     '''description  about function'''
+#     print('Howdy Ho, ' + name() + '!')
+#
+# def read_name():
+#     return ':::' + input('Input your Name: ') + ':::'
+#
+# howdy_ho(read_name)
+
+#           Python-джедай #12 - Модули, Рандом, SDL, Prebuild Binaries, PyPi, PiP
+#       https://youtu.be/-NTIn3-Oylc?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+#
+# import random
+# for i in range(10):
+#     print(random.randint(1,100))
+#
+# from random import randint
+# print(randint(1,100))
+#
+# from math import *
+# # print(pi)
+# #
+# from math import sqrt,pi
+# print(pi + sqrt(25))
+
+# Pypi repository модули сообщества (распознавания голоса и т.д)
+# pip программа для установки пакетов из pypi  pip intall facebook
+#           https://pypi.org/
+
+#       Python-джедай #13 - Используем PyPi, Узнаём погоду в любом городе
+#          https://youtu.be/53GBGBcMS6I?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+#
+# import pyowm # Нужно устанваливать модуль в терминале pycharm через pip3 install pyowm!
+#
+# city = input('Какой город интересует?: ')
+#
+# owm = pyowm.OWM('446c463f70b60c4c335705349910d74e')  # You MUST provide a valid API key
+# observation = owm.weather_at_place(city)
+# w = observation.get_weather()
+# temperature = w.get_temperature('celsius')['temp']
+# print('В городе ' + city + " сейчас температура: " + str(temperature))
+# print(w.get_detailed_status())
+
+#           Python-джедай #14 - Введение в исключения, pass, eval
+#           https://youtu.be/6IUCEITf0ao?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+
+
 
