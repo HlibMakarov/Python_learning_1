@@ -160,3 +160,119 @@
 #
 # add = lambda x, y: x * y
 # print(add (2,5))
+
+#  Уроки дальше
+# https://youtu.be/T-DmoA08d3Y?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj&t=795
+# name = input('Введите Ваше имя : ')
+# count = input('Сколько раз  умножить : ')
+#
+# print(name * int(count))
+
+# Python-джедай #4 - Типы данных, переменные
+# https://youtu.be/5h-KmmxEMvA?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj&t=73
+
+# test = 'Тестовая строка'
+# test2 = 2.0
+# print(test + str(test2))
+#
+# int число
+# str строка
+# float дробное
+
+# print(float("210" * int("2")))
+#
+# test = 1
+# test333 = 2
+# test_test_test = 10
+#
+# test = 10
+# Test = 20 регистрочувствителен разные переменные тест
+# print(test)
+# print(Test)
+#
+# test = 10
+# del test
+# print(test)
+
+# #Метасинтаксические переменные
+# foo -
+# bar -
+
+#Inplace data
+#
+# test = 10
+# test +=10
+# print(test)
+#
+# +=
+# -=
+# *=
+# /=
+# %=
+#
+# test = 10
+# test /=2
+# print(test)
+
+# x = 4
+# x *= 3
+# print(x)
+#
+# x = 'Test'
+# x *= 3
+# print(x)
+#
+# test = 10
+# test += 1
+# print(test)
+
+# Python-джедай #5 - Управляющие структуры
+#  https://youtu.be/BVHhfQgRmuE?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj&t=12
+# Булевые значения
+# test = True
+# test2 = False
+# print(10 == 11) # equal
+# print(10 != 11) # no equal
+# print(15 > 10) # more or not
+# print(5 >= 5) # more + equal
+
+# Лексиграфическое сравнение
+# Test #Чем дальше буква в алфавите тем больше у нее значение
+# Tesa #, но также важна и позиция его в слове.
+# print("Test" > "Tesa")
+# # print(8.7 <= 8.7)
+# pogoda = 'Winter'
+# if pogoda == 'Winter':
+#     print("At now is cold")
+
+# pogoda = 'Winter'
+# time = 'Day'
+# print('Start program')
+# if pogoda == 'Winter':
+#     print("At now is cold")
+#     if time == 'Night':
+#         print("Crazy don`t walk at night!!!")
+#     if time == 'Day':
+#             print("it is ok DAy! ")
+# if pogoda == 'Rain':
+#     print("UUU it is rain")
+# if pogoda == "sunny":
+#     print("it is sunny go to walk")
+# print("Finish program")
+
+# Управляющие конструкции
+# time = 'Morning'
+#
+# if time == 'Night':
+#     print('At now Night are you crazy?')
+# elif time == 'Morning':
+#     print(' it is morning ?')
+# else:
+#     print('All very well bro you could walk in the street')
+
+parol = input('Enter your password')
+
+if parol == '123':
+    print("WELCOME")
+else:
+    print('Wrong pass')
