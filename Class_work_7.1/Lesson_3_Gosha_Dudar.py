@@ -1,3 +1,11 @@
+                # Выбираем редактор кода: PyCharm
+                # Книги:
+                # 1)Byte of Python  150 стр Версия языка 3.0
+                # 2)Грокаем алгоритмы 300 стр
+                # 3)Проект Эйлера - вбить в голову навык построения алгоритмов. Решить первую сотню задач.
+                # 4) Книга Изучаем пайтон Марка Луца и другую его книгу.
+
+
 #https://youtu.be/Q7ccXmziG-I?list=PL0lO_mIqDDFXgfuxOEDTCwsWmKezOaDTu&t=189
 
 #print(25%4)
@@ -276,3 +284,149 @@
 #     print("WELCOME")
 # else:
 #     print('Wrong pass')
+
+# Python-джедай #6 - Множественные условия, приоритетность операторов
+#  https://youtu.be/eFmvvJXxs7g?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+#
+# pogoda = 'Rain'
+# time = 'Day'
+# if pogoda == 'Rain' and time == 'Night':
+#     print("what happens")
+
+# pogoda = 'rain'
+# if not pogoda == 'rain':
+#     print('what what')
+#
+#  if not True   :
+#      print("1")
+#  elif not (1 + 1 == 3):
+#      print("2")
+#  else:
+#      print("3")
+#      # правильный ответ 2
+#
+# 1) ()
+# 2) Возведение в степень **
+# 3) * /
+# 4) + -
+#
+# # приоритетность операторов таблица https://prnt.sc/aq8vk5
+
+# print(1 + 3 * 5 / 3 ** 5)
+
+# Python-джедай #7 - Циклы
+# #  https://youtu.be/7D4azTSKAwg?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+#
+# test = True
+#
+# while test:
+#     print("Hello")
+#     test = False
+
+# i = 1
+#
+# while i <= 5:
+#     print(i)
+#     i = i + 1
+#
+# i = 3
+# while i >= 0:
+#     print(i)
+#     i = i - 1
+
+# i = 1
+# while 1 == 1:
+#     print("Hello, " + str(i))
+#     i += 1
+
+# i = 1
+# while 1 == 1:
+#     print("Hello, " + str(i))
+#     i += 1
+#     if  i == 10001:
+#         break
+#
+# number = 0
+# while number <= 100:
+#     number += 1
+#     if (number % 2) != 0:
+#         continue
+#     print("Четное число " + str(number))
+
+# Python-джедай #8 - Списки
+# https://youtu.be/iRZsMSvAVm8?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+
+# test = ['a', 'b', 'c',[ 'd', 'e', 'f']]
+# print(test[3][2])
+#
+# test = [1, 2, 3]
+# print(test + [4, 5, 6])
+#
+# test = 'hello'
+# print(test[4])
+
+# test = [' Alex Mercer', 'Tony Stark', 'Lenny Flawes']
+# if ' Alex Mercer' in test:
+#     print(' Alex Mercer is in list')
+#
+# test = [1, 3, 8, 9]
+# if 4 in test:
+#     print("4")
+# if 3 in test:
+#     print('3')
+#
+# test = [1, 3, 8, 9]
+# if 4 not in test:
+#     print("4 is not in list")
+# if 3 not in test:
+#     print('3')
+#
+# test = []
+# test.append('hello')
+# test.append(3)
+# test.append([1, 2, 3])
+# print(test)
+#
+# words = ["hello"]
+# words.append('world')
+# print(words[1])
+
+# test = [5, 3, 2, 5, 6, 7]
+# test.append('5')
+# print(" all " + str(len(test))+ ' elements')
+
+# test = [5, 3, 2, 5, 6, 7]
+# test.append('5')
+# test.remove('5')
+# print(" all " + str(len(test))+ ' elements')
+
+# test = [1, 2, 3,]
+# test.insert(1, 4)
+# print(test)
+
+# test = [1, 2, 3, 3, 5, 5, 4, 4, 4]
+# test.reverse()
+# print(test)
+
+    # Python-джедай #9 - Диапазоны, Обход списков
+
+# https://youtu.be/z7oT_0WN2Bg?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
+
+# numbers = list(range(50,101,2))
+# print(numbers)
+#
+# numbers = [1, 2, 3, 4, 5]
+# i = 0
+# length = len(numbers) - 1
+# while i <= length:
+#     print(str(numbers[i]) + '!')
+#     i += 1
+#
+# numbers = [1, 2, 3, 4, 5]
+# for element in  numbers:
+#     print(str(element) + '!')
+
+# for test in range(15):
+#     print('Hello')
+
+
