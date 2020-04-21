@@ -524,5 +524,124 @@
 #           Python-джедай #14 - Введение в исключения, pass, eval
 #           https://youtu.be/6IUCEITf0ao?list=PLvoBekrlHDgROfUUHMbrrdsy_b2y2V_rj
 
+# try:
+#     test = int(input('Iput digit: '))
+#     sum = 7 / test
+#     print(sum)
+# except ZeroDivisionError:
+#     print("Нельзя делить на ноль")
+#     print('Программа завершена')
+#
+# try:
+#     print(6 / 2)
+# except (ZeroDivisionError, NameError, ValueError, TypeError):
+#     print("Поймано плохое исключение ! !!!")
+# except:
+#     print('Поймано исключение какое то')
+# finally:
+#     print('Finish')
+
+# try:
+#     pogoda = 'Bad'
+#     if pogoda == 'Bad':
+#       raise TypeError ('Test')
+# except:
+#     print('Catched')
+#
+# try:
+#     print( 7 / 0)
+# except:
+#     print("terwq")
+#     raise
+#     print("test")
+
+# class HowdyHo(Exception):
+#     pass
+# raise HowdyHoError('Reeere')
+
+#       Python-джедай #15 - Работа с файлами, assert, len, with
+#       https://youtu.be/190xJqI5qQE
+
+# def exc(text):
+#     assert text != ''
+#     print(str(text) + '!')
+# exc('')
+
+# def test(number):
+#     assert number > 0 , "number should be bigger than zero"
+#     print (str(number))
+# test(-10)
+
+
+#       r - Чтение файла (+)
+
+# filename = input("Укажите файл?: ")
+# file = open('test.txt', 'r')
+# print('В Данном файле ' + str(len(file.read())) + ' символов') # file.read - Прочитать все из файла
+# file.close()
+
+# file = open('test.txt', 'r')
+# print(file.read(6))
+# print(file.read(6))
+# file.close()
+
+#       w - Перезаписи файла
+
+# file = open('test.txt', 'w')
+# file.write('Hello world ^^^!!')
+# file.close()
+
+# filename = input('Input name file:  ')
+# text = input(' What text imput to file')
+# file = open(filename, 'w')
+# file.write(text)
+# file.close()
+
+#       a - Добавление файла
+# file = open('test.txt', 'a')
+# file.write(' Test')
+# file.close()
+
+#       o - Binary mode
+
+#  Программа для копирования файлов!
+
+# filename1 = input('Введите название копируемого файла?: ')
+# filename2 = 'backup__' + filename1
+#
+#
+# file1 = open(filename1, 'r')
+# file2 = open(filename2, 'w')
+#
+# file2.write(file1.read())
+#
+# file1.close()
+# file2.close()
+#
+# print('Backup успешно завершено')
+
+# filename1 = input('Введите название копируемого файла?: ')
+# filename2 = 'backup__' + filename1
+#
+#
+# file1 = open(filename1, 'rb') # Бинарное копирование видео и фото бинарные файлы
+# file2 = open(filename2, 'wb') # Бинарное копирование видео и фото бинарные файлы
+#
+# file2.write(file1.read())
+#
+# file1.close()
+# file2.close()
+#
+# print('Backup успешно завершено')
+
+# file = open('test.txt', 'r')
+# strings = file.readlines() #Чтение построчно
+# for strings in strings:
+#  print(strings)
+# file.close()
+# print('')
+#
+# with open('test.txt', 'r') as f: # Не нужно писать закрытие файла
+#     print(f.read())
 
 
